@@ -2,36 +2,30 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc1 = new Scanner(System.in);
-
-        int a = sc1.nextInt();
-        String operationString = sc1.next();
-        int b = sc1.nextInt();
-
-        int solution = 0;
-
-        if (operationString.equals("+")) {
-            solution = a + b;
-            System.out.println(solution);
-        } else if (operationString.equals("-")) {
-            solution = a - b;
-            System.out.println(solution);
-        } else if (operationString.equals("/")) {
-            if (b == 0) {
-                System.out.println("Division by 0!");
-            } else {
-                solution = a / b;
-                System.out.println(solution);
+        Scanner sc = new Scanner(System.in);
+        long firstNumber = sc.nextLong();
+        char operation = sc.next().charAt(0);
+        long secondNumber = sc.nextLong();
+        switch (operation) {
+            case '+': {
+                System.out.println(firstNumber + secondNumber);
+                break;
             }
-
-        } else if (operationString.equals("*")) {
-            solution = a * b;
-            System.out.println(solution);
+            case '-': {
+                System.out.println(firstNumber - secondNumber);
+                break;
+            }
+            case '/': {
+                System.out.println(secondNumber != 0 ? firstNumber / secondNumber : "Division by 0!");
+                break;
+            }
+            case '*': {
+                System.out.println(firstNumber * secondNumber);
+                break;
+            }
+            default: {
+                System.out.println("Unknown operator");
+            }
         }
-        else{
-            System.out.println("Unknown operator");
-        }
-
-
     }
 }
