@@ -56,10 +56,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/projects/113/stages/614/implement#comment
-status: Unchecked
+status: Solved
 feedback:
-  message: |-
-    Failed to launch checking. <a href="reload_gradle">Reload Gradle project</a>
-    For more information, see <a href="https://www.jetbrains.com/help/education/troubleshooting-guide.html#no_tests_have_run">the Troubleshooting guide</a>
-  time: Fri, 12 Mar 2021 11:07:17 UTC
-record: -1
+  message: Congratulations!
+  time: Fri, 12 Mar 2021 11:13:13 UTC
+record: 1
